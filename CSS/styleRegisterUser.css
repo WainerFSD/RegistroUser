@@ -42,7 +42,7 @@ form{
     grid-template-columns: repeat(1,1fr);
     width: 40%;
     height: 100%;
-    font-size: 30px;
+    font-size: 1.5rem;
     gap: 30px;
 }
 
@@ -50,8 +50,8 @@ input{
     border: 1px solid gray ;
     border-radius: 7px;
     background-color: w;
-    width: 400px;
-    font-size: 30px;
+    width: auto;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -62,14 +62,6 @@ input::placeholder{
 }
 
 
-#contenedor header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    grid-column: span 3;
-}
 
 
 #contenedor section{
@@ -78,34 +70,28 @@ input::placeholder{
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    width: 1000px;
+    width: 30%;
 }
 
 
 #contenedor aside{
     grid-column: span 1;
     padding: 50px;
-    width: 600px;
-    height: 500px;
+    width: 20%;
+    height: 40%;
 }
 
 aside{
     
-    border-radius: 50px;
+    border-radius: 2%;
     background-color: rgb(255, 255, 255);
     box-shadow: 15px 10px 25px rgb(121, 119, 119);
 }
 
-#contenedor footer{
-    padding: 300px;
-    margin-top: 90px;
-    grid-column: span 3;
-    background-color: black;
-}
 
 
 #contenedor2{
-    height: 1000px;
+    height: 200%;
     grid-column: span 3;
     grid-row: span 2;
     padding: 20px;
@@ -122,8 +108,8 @@ img{
 }
 
     @media only screen and (max-width:1000px){
-        #contenedor{
-            grid-template-columns: 1fr;
+        #contenedor2{
+            flex-direction: column;
         }
 
     }
